@@ -9,210 +9,28 @@
 
 
 React = require('react')
-
+EmojisConfig = require('./config')
 
 @Emojipicker = React.createClass
 
+  getInitialState: ->
+    emoji_groups: EmojisConfig.data
 
   render: ->
     return (
       <Emojipicker.App>
 
-        <Emojipicker.Heading title="Usados recientemente"/>
-        <Emojipicker.Group>
-          <Emojipicker.Icon icon="👍"/>
-          <Emojipicker.Icon icon="😃"/>
-          <Emojipicker.Icon icon="👿"/>
-          <Emojipicker.Icon icon="🏃"/>
-          <Emojipicker.Icon icon="🙊"/>
-          <Emojipicker.Icon icon="😊"/>
-          <Emojipicker.Icon icon="👀"/>
-          <Emojipicker.Icon icon="👏"/>
-        </Emojipicker.Group>
-        <Emojipicker.Heading title="Personas"/>
-        <Emojipicker.Group>
-          <Emojipicker.Icon icon="😃"/>
-          <Emojipicker.Icon icon="😀"/>
-          <Emojipicker.Icon icon="😊"/>
-          <Emojipicker.Icon icon="😉"/>
-          <Emojipicker.Icon icon="😍"/>
-          <Emojipicker.Icon icon="😘"/>
-          <Emojipicker.Icon icon="😚"/>
-          <Emojipicker.Icon icon="😗"/>
-          <Emojipicker.Icon icon="😙"/>
-          <Emojipicker.Icon icon="😜"/>
-          <Emojipicker.Icon icon="😝"/>
-          <Emojipicker.Icon icon="😛"/>
-          <Emojipicker.Icon icon="😳"/>
-          <Emojipicker.Icon icon="😁"/>
-          <Emojipicker.Icon icon="😔"/>
-          <Emojipicker.Icon icon="😌"/>
-          <Emojipicker.Icon icon="😒"/>
-          <Emojipicker.Icon icon="😞"/>
-          <Emojipicker.Icon icon="😣"/>
-          <Emojipicker.Icon icon="😢"/>
-          <Emojipicker.Icon icon="😂"/>
-          <Emojipicker.Icon icon="😭"/>
-          <Emojipicker.Icon icon="😪"/>
-          <Emojipicker.Icon icon="😥"/>
-          <Emojipicker.Icon icon="😰"/>
-          <Emojipicker.Icon icon="😅"/>
-          <Emojipicker.Icon icon="😓"/>
-          <Emojipicker.Icon icon="😩"/>
-          <Emojipicker.Icon icon="😫"/>
-          <Emojipicker.Icon icon="😨"/>
-          <Emojipicker.Icon icon="😱"/>
-          <Emojipicker.Icon icon="😠"/>
-          <Emojipicker.Icon icon="😡"/>
-          <Emojipicker.Icon icon="😤"/>
-          <Emojipicker.Icon icon="😖"/>
-          <Emojipicker.Icon icon="😆"/>
-          <Emojipicker.Icon icon="😋"/>
-          <Emojipicker.Icon icon="😷"/>
-          <Emojipicker.Icon icon="😎"/>
-          <Emojipicker.Icon icon="😴"/>
-          <Emojipicker.Icon icon="😵"/>
-          <Emojipicker.Icon icon="😲"/>
-          <Emojipicker.Icon icon="😟"/>
-          <Emojipicker.Icon icon="😦"/>
-          <Emojipicker.Icon icon="😧"/>
-          <Emojipicker.Icon icon="👿"/>
-          <Emojipicker.Icon icon="😮"/>
-          <Emojipicker.Icon icon="😬"/>
-          <Emojipicker.Icon icon="😐"/>
-          <Emojipicker.Icon icon="😕"/>
-          <Emojipicker.Icon icon="😯"/>
-          <Emojipicker.Icon icon="😏"/>
-          <Emojipicker.Icon icon="😑"/>
-          <Emojipicker.Icon icon="👲"/>
-          <Emojipicker.Icon icon="👳"/>
-          <Emojipicker.Icon icon="👮"/>
-          <Emojipicker.Icon icon="👷"/>
-          <Emojipicker.Icon icon="💂"/>
-          <Emojipicker.Icon icon="👶"/>
-          <Emojipicker.Icon icon="👦"/>
-          <Emojipicker.Icon icon="👧"/>
-          <Emojipicker.Icon icon="👨"/>
-          <Emojipicker.Icon icon="👩"/>
-          <Emojipicker.Icon icon="👴"/>
-          <Emojipicker.Icon icon="👵"/>
-          <Emojipicker.Icon icon="👱"/>
-          <Emojipicker.Icon icon="👼"/>
-          <Emojipicker.Icon icon="👸"/>
-          <Emojipicker.Icon icon="😺"/>
-          <Emojipicker.Icon icon="😸"/>
-          <Emojipicker.Icon icon="😻"/>
-          <Emojipicker.Icon icon="😽"/>
-          <Emojipicker.Icon icon="😼"/>
-          <Emojipicker.Icon icon="🙀"/>
-          <Emojipicker.Icon icon="😿"/>
-          <Emojipicker.Icon icon="😹"/>
-          <Emojipicker.Icon icon="😾"/>
-          <Emojipicker.Icon icon="👹"/>
-          <Emojipicker.Icon icon="👺"/>
-          <Emojipicker.Icon icon="🙈"/>
-          <Emojipicker.Icon icon="🙉"/>
-          <Emojipicker.Icon icon="🙊"/>
-          <Emojipicker.Icon icon="💀"/>
-          <Emojipicker.Icon icon="👽"/>
-          <Emojipicker.Icon icon="💩"/>
-          <Emojipicker.Icon icon="🔥"/>
-          <Emojipicker.Icon icon="✨"/>
-          <Emojipicker.Icon icon="🌟"/>
-          <Emojipicker.Icon icon="💫"/>
-          <Emojipicker.Icon icon="💥"/>
-          <Emojipicker.Icon icon="💢"/>
-          <Emojipicker.Icon icon="💦"/>
-          <Emojipicker.Icon icon="💧"/>
-          <Emojipicker.Icon icon="💤"/>
-          <Emojipicker.Icon icon="💨"/>
-          <Emojipicker.Icon icon="👂"/>
-          <Emojipicker.Icon icon="👀"/>
-          <Emojipicker.Icon icon="👃"/>
-          <Emojipicker.Icon icon="👅"/>
-          <Emojipicker.Icon icon="👄"/>
-          <Emojipicker.Icon icon="👍"/>
-          <Emojipicker.Icon icon="👎"/>
-          <Emojipicker.Icon icon="👌"/>
-          <Emojipicker.Icon icon="👊"/>
-          <Emojipicker.Icon icon="✊"/>
-          <Emojipicker.Icon icon="👋"/>
-          <Emojipicker.Icon icon="✋"/>
-          <Emojipicker.Icon icon="👐"/>
-          <Emojipicker.Icon icon="👆"/>
-          <Emojipicker.Icon icon="👇"/>
-          <Emojipicker.Icon icon="👉"/>
-          <Emojipicker.Icon icon="👈"/>
-          <Emojipicker.Icon icon="🙌"/>
-          <Emojipicker.Icon icon="🙏"/>
-          <Emojipicker.Icon icon="👏"/>
-          <Emojipicker.Icon icon="💪"/>
-          <Emojipicker.Icon icon="🚶"/>
-          <Emojipicker.Icon icon="🏃"/>
-          <Emojipicker.Icon icon="💃"/>
-          <Emojipicker.Icon icon="👫"/>
-          <Emojipicker.Icon icon="👪"/>
-          <Emojipicker.Icon icon="💏"/>
-          <Emojipicker.Icon icon="💑"/>
-          <Emojipicker.Icon icon="👯"/>
-          <Emojipicker.Icon icon="🙆"/>
-          <Emojipicker.Icon icon="🙅"/>
-          <Emojipicker.Icon icon="💁"/>
-          <Emojipicker.Icon icon="🙋"/>
-          <Emojipicker.Icon icon="💆"/>
-          <Emojipicker.Icon icon="💇"/>
-          <Emojipicker.Icon icon="💅"/>
-          <Emojipicker.Icon icon="👰"/>
-          <Emojipicker.Icon icon="🙎"/>
-          <Emojipicker.Icon icon="🙍"/>
-          <Emojipicker.Icon icon="🙇"/>
-          <Emojipicker.Icon icon="🎩"/>
-          <Emojipicker.Icon icon="👑"/>
-          <Emojipicker.Icon icon="👒"/>
-          <Emojipicker.Icon icon="👟"/>
-          <Emojipicker.Icon icon="👞"/>
-          <Emojipicker.Icon icon="👡"/>
-          <Emojipicker.Icon icon="👠"/>
-          <Emojipicker.Icon icon="👢"/>
-          <Emojipicker.Icon icon="👕"/>
-          <Emojipicker.Icon icon="👔"/>
-          <Emojipicker.Icon icon="👚"/>
-          <Emojipicker.Icon icon="👗"/>
-          <Emojipicker.Icon icon="🎽"/>
-          <Emojipicker.Icon icon="👖"/>
-          <Emojipicker.Icon icon="👘"/>
-          <Emojipicker.Icon icon="👙"/>
-          <Emojipicker.Icon icon="💼"/>
-          <Emojipicker.Icon icon="👜"/>
-          <Emojipicker.Icon icon="👝"/>
-          <Emojipicker.Icon icon="👛"/>
-          <Emojipicker.Icon icon="👓"/>
-          <Emojipicker.Icon icon="🎀"/>
-          <Emojipicker.Icon icon="🌂"/>
-          <Emojipicker.Icon icon="💄"/>
-          <Emojipicker.Icon icon="💛"/>
-          <Emojipicker.Icon icon="💙"/>
-          <Emojipicker.Icon icon="💜"/>
-          <Emojipicker.Icon icon="💚"/>
-          <Emojipicker.Icon icon="💔"/>
-          <Emojipicker.Icon icon="💗"/>
-          <Emojipicker.Icon icon="💓"/>
-          <Emojipicker.Icon icon="💕"/>
-          <Emojipicker.Icon icon="💖"/>
-          <Emojipicker.Icon icon="💞"/>
-          <Emojipicker.Icon icon="💘"/>
-          <Emojipicker.Icon icon="💌"/>
-          <Emojipicker.Icon icon="💋"/>
-          <Emojipicker.Icon icon="💍"/>
-          <Emojipicker.Icon icon="💎"/>
-          <Emojipicker.Icon icon="👤"/>
-          <Emojipicker.Icon icon="💬"/>
-          <Emojipicker.Icon icon="👣"/>
-        </Emojipicker.Group>
-        <Emojipicker.Heading title="Naturaleza"/>
-        <Emojipicker.Heading title="Objetos"/>
-        <Emojipicker.Heading title="Lugares"/>
-        <Emojipicker.Heading title="Símbolos"/>
+        {
+          @state.emoji_groups.map (item, i)=>
+            <div>
+              <Emojipicker.Heading 
+                title={item.name}
+              />
+              <Emojipicker.Group 
+                collection={item.emojis}
+              />   
+            </div>
+        }
 
       </Emojipicker.App>
     )
@@ -235,7 +53,6 @@ React = require('react')
       </div>
     )
 
-
 @Emojipicker.Tabs = React.createClass
   render: ->
     return (
@@ -249,13 +66,11 @@ React = require('react')
       </div>
     )
 
-
 @Emojipicker.Search = React.createClass
   render: ->
     return (
       <input className="emojipicker-search" placeholder="Buscar"/>
     )
-
 
 @Emojipicker.Panel = React.createClass
   render: ->
@@ -279,7 +94,10 @@ React = require('react')
   render: ->
     return (
       <div className="emojipicker-group">
-        { @props.children }
+        {
+          @props.collection.map (item, i)=>
+            <Emojipicker.Icon icon={item}/>
+        }
       </div>
     )
 
@@ -290,6 +108,5 @@ React = require('react')
         { @props.icon }
       </span>
     )
-
 
 module.exports = @Emojipicker
