@@ -1,0 +1,99 @@
+
+.emojipicker {
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,.1);
+  font-size: 22px;
+  overflow: hidden;
+}
+
+.emojipicker-tabs {
+  & {
+    padding: 10px 15px 5px;
+    filter: contrast(10) grayscale(1) invert(0.3);
+  }
+  .emojipicker-icon {
+    opacity: .3;
+  }
+}
+
+.emojipicker-search {
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 25px 11px;
+  color: #6e7a89;
+  font-weight: 400;
+  font-size: 13px;
+  width: 100%;
+  padding: 16px 25px;
+  box-sizing: border-box;
+  border: 0 none;
+}
+
+.emojipicker-container {
+  & {
+    position: relative;
+  }
+
+  &:before,
+  &:after {
+    z-index: 100;
+    content: " ";
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  &:before {
+    background: linear-gradient(#fff,hsla(0,0%,100%,0) 8px);
+    top: 0;
+    width: 260px;
+    height: 16px;
+  }
+
+  &:after {
+    background: linear-gradient(hsla(0,0%,100%,0),#fff 8px);
+    border-radius: 0 3px;
+    bottom: 0;
+    width: 260px;
+    height: 16px;
+  }
+}
+
+.emojipicker-panel {
+  overflow-y: scroll;
+  padding: 0 15px 10px;
+  width: 255px;
+  height: 220px;
+}
+
+.emojipicker-heading {
+  color: #6e7a89;
+  font-weight: 400;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.emojipicker-group {
+}
+
+.emojipicker-icon {
+  padding: 6px;
+  width: 30px;
+  line-height: 30px;
+  display: inline-table;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 28px;
+  transition: -webkit-transform 60ms ease-out;
+  transition: transform 60ms ease-out;
+  transition: transform 60ms ease-out,-webkit-transform 60ms ease-out;
+  transition-delay: 60ms;
+  font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+}
