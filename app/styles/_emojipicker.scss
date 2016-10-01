@@ -1,3 +1,18 @@
+%emojipicker-icon {
+  padding: 6px;
+  width: 30px;
+  line-height: 30px;
+  display: inline-table;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 28px;
+  transition: -webkit-transform 60ms ease-out;
+  transition: transform 60ms ease-out;
+  transition: transform 60ms ease-out,-webkit-transform 60ms ease-out;
+  transition-delay: 60ms;
+  font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+}
 
 .emojipicker {
   box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
@@ -6,16 +21,6 @@
   border: 1px solid rgba(0,0,0,.1);
   font-size: 22px;
   overflow: hidden;
-}
-
-.emojipicker-tabs {
-  & {
-    padding: 10px 15px 5px;
-    filter: contrast(10) grayscale(1) invert(0.3);
-  }
-  .emojipicker-icon {
-    opacity: .3;
-  }
 }
 
 .emojipicker-search {
@@ -68,6 +73,7 @@
   padding: 0 15px 10px;
   width: 255px;
   height: 220px;
+  height: 200px;
 }
 
 .emojipicker-heading {
@@ -82,18 +88,21 @@
 .emojipicker-group {
 }
 
+
 .emojipicker-icon {
-  padding: 6px;
-  width: 30px;
-  line-height: 30px;
-  display: inline-table;
-  text-align: center;
-  cursor: pointer;
-  vertical-align: middle;
-  font-size: 28px;
-  transition: -webkit-transform 60ms ease-out;
-  transition: transform 60ms ease-out;
-  transition: transform 60ms ease-out,-webkit-transform 60ms ease-out;
-  transition-delay: 60ms;
-  font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+  @extend %emojipicker-icon;
+}
+.emojipicker-icon:hover {
+  transition-delay: 0ms;
+  transform: scale(1.4);
+}
+
+
+.emojipicker-tabs {
+  padding: 2px 15px;
+  filter: contrast(10) grayscale(1) invert(0.3);
+}
+.emojipicker-tab {
+  @extend %emojipicker-icon;
+  opacity: .3;
 }
